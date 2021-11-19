@@ -5,6 +5,8 @@ import Nav from "./share/components/nav/nav";
 import Footer from "./share/components/footer/footer";
 import Home from "./pages/Home";
 import Vfx from "./pages/vfx/vfx";
+import Modelados from "./pages/modelados/modelados";
+import Diseno from "./pages/diseno/diseno";
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/vfx" element={<Vfx />}></Route>
+          <Route path="/modelados" element={<Modelados />}></Route>
+          <Route path="/diseno" element={<Diseno />}></Route>
         </Routes>
       </div>
       <Footer />

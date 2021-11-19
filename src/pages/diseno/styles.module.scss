@@ -1,0 +1,6 @@
+.containerArticles {
+  > div:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

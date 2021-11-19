@@ -9,26 +9,51 @@ function Nav() {
   const rotate90 = useRef();
   const hide = useRef();
   const overlay = useRef();
+  const el = useRef();
+  const q = gsap.utils.selector(el);
 
   /* eslint-disable */
   if (showNavMobile) {
     gsap.to(rotate45.current, {
       rotation: "+=45",
-      transformOrigin: "50px 40px",
+      transformOrigin: "0% 20%",
+      x: "18%",
+      y: "-4%",
     }),
       gsap.to(rotate90.current, {
         rotation: "-=45",
-        transformOrigin: "50px 40px",
+        transformOrigin: "50% 50%",
       }),
       gsap.to(overlay.current, {
-        top: "100%",
-      });
+        top: "0%",
+      }),
+      gsap.to(hide.current, {
+        opacity: "0",
+      }),
+      gsap.fromTo(
+        q(".listOfLinks li"),
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 1,
+          stagger: 0.2,
+        }
+      );
   } else {
     gsap.to(rotate45.current, {
-      rotation: "-=45",
+      rotation: "0",
+      x: "0%",
     }),
       gsap.to(rotate90.current, {
-        rotation: "+=45",
+        rotation: "0",
+      }),
+      gsap.to(hide.current, {
+        opacity: "1",
+      }),
+      gsap.to(overlay.current, {
+        top: "-100%",
       });
   }
 
@@ -52,33 +77,44 @@ function Nav() {
 
   return (
     <>
-      {showNavMobile && (
-        <>
-          <div className={css.overlay} ref={overlay} />
-          <ul className={css.listOfLinks}>
-            <li>
-              <Link to="/modelados" onClick={() => doNavigate()}>
-                MODELADOS 3D
-              </Link>
-            </li>
-            <li>
-              <Link to="/webs">DESARROLLO WEBS Y APPS</Link>
-            </li>
-            <li>
-              <Link to="/vfx">VFX / ANIMACIÓN</Link>
-            </li>
-            <li>
-              <Link to="/motion">MOTION GRAPHICS</Link>
-            </li>
-            <li>
-              <Link to="/ilustracion">ILUSTRACIÓN</Link>
-            </li>
-            <li>
-              <Link to="/diseno">DISEÑO</Link>
-            </li>
-          </ul>
-        </>
-      )}
+      <div className={css.overlay} ref={overlay}>
+        <ul className={css.listOfLinks} useRef={el}>
+          <li>
+            <Link
+              onClick={() => setShowNavMobile(false)}
+              to="/modelados"
+              onClick={() => doNavigate()}
+            >
+              MODELADOS 3D
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNavMobile(false)} to="/webs">
+              DESARROLLO WEBS Y APPS
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNavMobile(false)} to="/vfx">
+              VFX / ANIMACIÓN
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNavMobile(false)} to="/motion">
+              MOTION GRAPHICS
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNavMobile(false)} to="/ilustracion">
+              ILUSTRACIÓN
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNavMobile(false)} to="/diseno">
+              DISEÑO
+            </Link>
+          </li>
+        </ul>
+      </div>
       <div
         onClick={() => setShowNavMobile(!showNavMobile)}
         onKeyDown={() => setShowNavMobile(!showNavMobile)}
