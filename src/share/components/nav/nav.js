@@ -58,6 +58,7 @@ function Nav() {
   }
 
   const doNavigate = () => {
+    setShowNavMobile(false);
     gsap.to(overlay.current, {
       top: "-100%",
     });
@@ -80,36 +81,37 @@ function Nav() {
       <div className={css.overlay} ref={overlay}>
         <ul className={css.listOfLinks} useRef={el}>
           <li>
-            <Link
-              onClick={() => setShowNavMobile(false)}
-              to="/modelados"
-              onClick={() => doNavigate()}
-            >
+            <Link to="/" onClick={() => doNavigate()}>
+              INICIO
+            </Link>
+          </li>
+          <li>
+            <Link to="/modelados" onClick={() => doNavigate()}>
               MODELADOS 3D
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowNavMobile(false)} to="/webs">
+            <Link to="/webs" onClick={() => doNavigate()}>
               DESARROLLO WEBS Y APPS
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowNavMobile(false)} to="/vfx">
+            <Link to="/vfx" onClick={() => doNavigate()}>
               VFX / ANIMACIÓN
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowNavMobile(false)} to="/motion">
+            <Link to="/motion" onClick={() => doNavigate()}>
               MOTION GRAPHICS
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowNavMobile(false)} to="/ilustracion">
+            <Link to="/ilustracion" onClick={() => doNavigate()}>
               ILUSTRACIÓN
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowNavMobile(false)} to="/diseno">
+            <Link to="/diseno" onClick={() => doNavigate()}>
               DISEÑO
             </Link>
           </li>

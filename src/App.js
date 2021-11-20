@@ -17,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/modelados" element={<Modelados />}></Route>
           <Route path="/diseno" element={<Diseno />}></Route>
+          <Route path="/vfx" element={<Vfx />}></Route>
         </Routes>
       </div>
       <Footer />

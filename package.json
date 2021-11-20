@@ -44,7 +44,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "npx surge --project ./src/ --domain agenciacosmos.surge.sh"
+      "pre-push": "npx surge --project ./dist/ --domain agenciacosmos.surge.sh"
     }
   }
 }
