@@ -41,10 +41,5 @@
   "devDependencies": {
     "git-scripts": "^0.4.3",
     "surge": "^0.23.0"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "npx surge --project ./dist/ --domain agenciacosmos.surge.sh"
-    }
   }
 }
