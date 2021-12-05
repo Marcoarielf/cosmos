@@ -5,8 +5,11 @@ import Nav from "./share/components/nav/nav";
 import Footer from "./share/components/footer/footer";
 import Home from "./pages/Home";
 import Vfx from "./pages/vfx/vfx";
+// import Models3d from "./pages/3d/3d";
 import Modelados from "./pages/modelados/modelados";
 import Diseno from "./pages/diseno/diseno";
+import Webs from "./pages/webs/webs";
+import Campanias from "./pages/campanias/campanias";
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
           <Route path="/modelados" element={<Modelados />}></Route>
           <Route path="/diseno" element={<Diseno />}></Route>
           <Route path="/vfx" element={<Vfx />}></Route>
+          <Route path="/desarrollo-web" element={<Webs />}></Route>
+          <Route path="/campanias" element={<Campanias />}></Route>
         </Routes>
       </div>
       <Footer />

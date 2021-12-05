@@ -91,7 +91,7 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/webs" onClick={() => doNavigate()}>
+            <Link to="/desarrollo-web" onClick={() => doNavigate()}>
               DESARROLLO WEBS Y APPS
             </Link>
           </li>
@@ -101,13 +101,8 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/motion" onClick={() => doNavigate()}>
-              MOTION GRAPHICS
-            </Link>
-          </li>
-          <li>
-            <Link to="/ilustracion" onClick={() => doNavigate()}>
-              ILUSTRACIÓN
+            <Link to="/campanias" onClick={() => doNavigate()}>
+              CAMPAÑAS PUBLICITARIAS
             </Link>
           </li>
           <li>

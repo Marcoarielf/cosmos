@@ -15,7 +15,6 @@ function Article({
 }) {
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
-  console.log(isPar);
 
   useEffect(() => {
     const element = ref.current;

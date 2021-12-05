@@ -88,7 +88,11 @@ function Home() {
               3d
             </li>
           </Link>
-          <Link to="/webs" onMouseEnter={onEnter} onMouseLeave={onLeave}>
+          <Link
+            to="/desarrollo-web"
+            onMouseEnter={onEnter}
+            onMouseLeave={onLeave}
+          >
             <li>
               desarrollo web <br />y apps
             </li>
@@ -100,11 +104,8 @@ function Home() {
             </li>
           </Link>
           {/* <div onClick={() => changePage("motion")}> */}
-          <Link to="/motion" onMouseEnter={onEnter} onMouseLeave={onLeave}>
-            <li>MOTION GRAPHICS</li>
-          </Link>
-          <Link to="/ilustracion" onMouseEnter={onEnter} onMouseLeave={onLeave}>
-            <li>ilustracion</li>
+          <Link to="/campanias" onMouseEnter={onEnter} onMouseLeave={onLeave}>
+            <li>CAMPAÑAS PUBLICITARIAS</li>
           </Link>
           <Link to="/diseno" onMouseEnter={onEnter} onMouseLeave={onLeave}>
             <li>diseño</li>

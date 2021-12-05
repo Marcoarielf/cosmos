@@ -1,0 +1,15 @@
+.dragon {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  max-width: 80%;
+  margin: 2%;
+  background-color: rosybrown;
+  canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
