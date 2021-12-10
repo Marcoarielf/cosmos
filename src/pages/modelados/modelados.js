@@ -11,7 +11,11 @@ function Modelados() {
 
   return (
     <>
-      <Header title={titleHeader} description={descriptionHeader} />
+      <Header
+        title={titleHeader}
+        description={descriptionHeader}
+        bg="header_3d"
+      />
       <div className={css.containerModels}>
         <ModelDetail
           url="https://www.artstation.com/embed/37098047"

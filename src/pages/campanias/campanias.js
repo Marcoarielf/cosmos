@@ -59,6 +59,7 @@ function Campanias() {
       <Header
         title="campañas publicitarias"
         description="El bullying en los videojuegos afecta a muchas personas, por eso Naguará team desea hacer una campaña de concientización. Teniendo en cuenta que los juegos Battle Royale cada vez son más populares, nos centramos en qué los diferencia, y es la existencia de un área segura y una insegura. El último en quedar en pie, GANA. Pero alguna vez, ¿te pusiste a pensar que significa esto para una persona que sufre bullying? ¿Existe un área segura/insegura en la vida real?"
+        bg="header_camps"
       />
       <a
         className={`${css.video_thumb_cont} video_thumb_cont myBtn modalVideo`}

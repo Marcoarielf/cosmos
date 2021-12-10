@@ -1,6 +1,6 @@
 .containerHeader {
   height: 100vh;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,13 +11,10 @@
     flex-direction: column;
   }
   .leftSide {
-    width: 40%;
-    @media screen and (max-width: 768px) {
-      margin-top: 10%;
-      width: 90%;
-    }
+    text-align: center;
     h2 {
       font-size: 4rem;
+      margin-top: 50%;
       text-transform: uppercase;
       @media screen and (max-width: 768px) {
         font-size: 2rem;

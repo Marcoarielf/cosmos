@@ -54,7 +54,11 @@ function Diseno() {
 
   return (
     <>
-      <Header title={titleHeader} description={descriptionHeader} />
+      <Header
+        title={titleHeader}
+        description={descriptionHeader}
+        bg="header_diseno"
+      />
       <div className={css.containerArticles}>
         {projects.map((project, i) => {
           return (
