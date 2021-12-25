@@ -93,9 +93,10 @@ function Home() {
             onMouseEnter={onEnter}
             onMouseLeave={onLeave}
           >
-            <li>
-              desarrollo web <br />y apps
-            </li>
+            <li>desarrollo web</li>
+          </Link>
+          <Link to="/apps" onMouseEnter={onEnter} onMouseLeave={onLeave}>
+            <li>APPS Y JUEGOS</li>
           </Link>
           <Link to="/vfx" onMouseEnter={onEnter} onMouseLeave={onLeave}>
             <li>
@@ -108,7 +109,7 @@ function Home() {
             <li>CAMPAÑAS PUBLICITARIAS</li>
           </Link>
           <Link to="/diseno" onMouseEnter={onEnter} onMouseLeave={onLeave}>
-            <li>diseño</li>
+            <li>DISEÑO GRÁFICO</li>
           </Link>
         </ul>
       </div>

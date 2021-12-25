@@ -92,7 +92,12 @@ function Nav() {
           </li>
           <li>
             <Link to="/desarrollo-web" onClick={() => doNavigate()}>
-              DESARROLLO WEBS Y APPS
+              DESARROLLO WEB
+            </Link>
+          </li>
+          <li>
+            <Link to="/apps" onClick={() => doNavigate()}>
+              apps y juegos
             </Link>
           </li>
           <li>
@@ -107,7 +112,7 @@ function Nav() {
           </li>
           <li>
             <Link to="/diseno" onClick={() => doNavigate()}>
-              DISEÑO
+              DISEÑO GRÁFICO
             </Link>
           </li>
         </ul>

@@ -12,6 +12,7 @@ function Article({
   bgColor,
   color,
   isPar,
+  haveProcess = true,
 }) {
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
@@ -68,7 +69,7 @@ function Article({
       },
       {
         opacity: 1,
-        y: 0,
+        y: -100,
         duration: 0.5,
         ease: "ease",
         scrollTrigger: {
@@ -96,8 +97,13 @@ function Article({
         </div>
         <div className={`${css.rightSide} rightSide`} style={{ color: color }}>
           <h2 className={`${!isPar ? css.isPar : null} title`}>{title}</h2>
-          <p className="description">{description}</p>
-          <span>{year}</span>
+          <p className="description">
+            {description} <br />
+            <br />
+            <br /> <span>{year}</span>
+          </p>
+
+          {haveProcess && <a href="">ver proceso</a>}
         </div>
       </div>
     </div>

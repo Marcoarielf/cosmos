@@ -10,6 +10,7 @@ import Modelados from "./pages/modelados/modelados";
 import Diseno from "./pages/diseno/diseno";
 import Webs from "./pages/webs/webs";
 import Campanias from "./pages/campanias/campanias";
+import Apps from "./pages/apps/apps";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/diseno" element={<Diseno />}></Route>
           <Route path="/vfx" element={<Vfx />}></Route>
           <Route path="/desarrollo-web" element={<Webs />}></Route>
+          <Route path="/apps" element={<Apps />}></Route>
           <Route path="/campanias" element={<Campanias />}></Route>
         </Routes>
       </div>

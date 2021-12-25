@@ -3,25 +3,28 @@
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  min-height: 100vh;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
   div {
-    width: 300px;
-    margin: 5%;
+    width: 25%;
+    height: 50vh;
+    margin: 3%;
     a,
     button {
       margin: 0;
-      color: white;
+      color: rgb(255, 255, 255);
+      background: rgb(0, 0, 0);
       padding: 20px 60px;
       text-decoration: none;
-      border: 1px solid white;
-      background: none;
       text-align: center;
+      outline: none;
+      border: none;
       cursor: pointer;
       &:hover {
-        background-color: white;
-        color: black;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         font-weight: 600;
         transition: all 1s;
       }

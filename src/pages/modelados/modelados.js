@@ -19,20 +19,20 @@ function Modelados() {
       <div className={css.containerModels}>
         <ModelDetail
           url="https://www.artstation.com/embed/37098047"
-          linkProceso="#"
+          linkProceso="https://www.youtube.com/embed/7QmZBZQT5q0"
           title="dragon"
           description="Modelado 3D. Estilo steampunk."
         />
         <ModelDetail
           url="https://www.artstation.com/embed/37032877"
-          linkProceso="#"
+          linkProceso="https://www.youtube.com/embed/XdQ6aM3rCjI"
           title="dron"
           description="Modelado 3D. Estilo steampunk."
         />
         <ModelDetail
           url="https://www.artstation.com/embed/43957287"
-          linkProceso="#"
-          title="gorro HP"
+          linkProceso="https://www.youtube.com/embed/bStc8fiGJ4I"
+          title="Sorting Hat"
           description="Modelado y esculpido en zBrush"
         />
         <ModelDetail
@@ -40,12 +40,14 @@ function Modelados() {
           linkProceso="#"
           title="war machine"
           description="Modelado 3D."
+          haveProcess={false}
         />
         <ModelDetail
           url="https://www.artstation.com/embed/43954933"
           linkProceso="#"
           title="GROOUT"
           description="Modelado 3D. Estilo steampunk."
+          haveProcess={false}
         />
       </div>
     </>

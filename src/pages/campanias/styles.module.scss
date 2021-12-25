@@ -5,6 +5,9 @@
   display: inline-block;
   //margin: 0 0 8% 0;
   position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   // @media screen and (max-width: 480px){
   //     margin: 45px 0 45px 0;
   // }
@@ -13,8 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    img {
+    height: 80vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto img {
       width: calc(668px + (1221 - 668) * ((100vw - 800px) / (1640 - 800)));
     }
     span {

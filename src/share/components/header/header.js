@@ -3,12 +3,11 @@ import { gsap } from "gsap";
 import css from "./styles.module.scss";
 
 function Header({ title, description, bg }) {
-  const Header3d = bg === "3d" ? "header_3d.jpg" : null;
-
   return (
     <div
       style={{
         backgroundImage: `url("/${bg}.jpg")`,
+        backgroundPosition: "50% 20%",
         backgroundSize: "cover",
       }}
       className={css.containerHeader}

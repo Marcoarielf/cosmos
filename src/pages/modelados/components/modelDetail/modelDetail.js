@@ -1,11 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Modal from "../../../../Modal";
 import css from "./styles.module.scss";
 
-function ModelDetail({ title, description, url, linkProceso }) {
+function ModelDetail({
+  title,
+  description,
+  url,
+  linkProceso,
+  haveProcess = true,
+}) {
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
+
+  const [isOpenModal1, setIsOpenModal1] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState(linkProceso);
 
   useEffect(() => {
     const element = ref.current;
@@ -91,6 +101,11 @@ function ModelDetail({ title, description, url, linkProceso }) {
     );
   }, []);
 
+  const handlerClick = () => {
+    setCurrentVideo(linkProceso);
+    setIsOpenModal1(true);
+  };
+
   return (
     <div className={`${css.modelados} modelados`} ref={ref}>
       <iframe
@@ -105,10 +120,36 @@ function ModelDetail({ title, description, url, linkProceso }) {
       <div className={css.info}>
         <h2 className="title">{title}</h2>
         <p className="description">{description}</p>
-        <a href={linkProceso} className={`${css.proceso} proceso`}>
-          ver proceso
-        </a>
+        {haveProcess && (
+          <button
+            target="_blank"
+            href={linkProceso}
+            className={`${css.proceso} proceso`}
+            onClick={() => handlerClick()}
+            type="button"
+          >
+            ver proceso
+          </button>
+        )}
       </div>
+      <Modal
+        width="80%"
+        height="80%"
+        isOpenModal={isOpenModal1}
+        onClose={() => setIsOpenModal1(false)}
+      >
+        <div style={{ width: "100%", height: "100%" }}>
+          <iframe
+            width="100%"
+            height="100%"
+            src={currentVideo}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </Modal>
     </div>
   );
 }
