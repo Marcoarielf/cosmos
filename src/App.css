@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 9.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7f7f7f;
+  border-right: 1px solid #7f7f7f;
+}
+
+.scroller::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+.scroller::-webkit-scrollbar-track {
+  background: white;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: #7f7f7f;
+  border-right: 1px solid #7f7f7f;
+}

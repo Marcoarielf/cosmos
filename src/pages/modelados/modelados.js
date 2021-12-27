@@ -21,32 +21,38 @@ function Modelados() {
           url="https://www.artstation.com/embed/37098047"
           linkProceso="https://www.youtube.com/embed/7QmZBZQT5q0"
           title="dragon"
-          description="Modelado 3D. Estilo steampunk."
+          description="DRAGÓN STEAMPUNK fue un proyecto generado en 2020 con fines académicos. 
+          El modelado fue generado a partir de 3D Max en low poly con una cantidad de 115.464 vértices y se utilizó RizomUV y Substance Painter para el texturizado y render. Finalmente para el renderizado se usó V-Ray y Marmoset.
+          Este fue un elemento perteneciente a una habitación con objetos que continuaron la misma temática steampunk."
         />
         <ModelDetail
           url="https://www.artstation.com/embed/37032877"
           linkProceso="https://www.youtube.com/embed/XdQ6aM3rCjI"
           title="dron"
-          description="Modelado 3D. Estilo steampunk."
+          description="DRON fue un proyecto generado en 2019 con fines académicos. 
+          El modelado fue hecho en 3dsMax con temática Steampunk. Se utilizó RizomUV y Substance Painter para el texturizado y render. Finalmente para el renderizado se usó V-Ray y Marmoset."
         />
         <ModelDetail
           url="https://www.artstation.com/embed/43957287"
           linkProceso="https://www.youtube.com/embed/bStc8fiGJ4I"
           title="Sorting Hat"
-          description="Modelado y esculpido en zBrush"
+          description="SOMBRERO SELECCIONADOR Harry Potter. Fue un proyecto generado en 2020 con fines académicos. 
+          El modelado fue esculpido en zBrush. Se utilizó RizomUV y Substance Painter para el texturizado y render. Finalmente para el renderizado se usó V-Ray y Marmoset."
         />
         <ModelDetail
           url="https://www.artstation.com/embed/37098111"
           linkProceso="#"
           title="war machine"
-          description="Modelado 3D."
+          description="WAR MACHINE fue un proyecto generado en 2020 con fines académicos. 
+          El modelado fue generado a partir de 3D Max en low poly con una cantidad de 89.961 vértices y se utilizó RizomUV y Substance Painter para el texturizado y render. Finalmente para el renderizado se usó V-Ray y Marmoset."
           haveProcess={false}
         />
         <ModelDetail
           url="https://www.artstation.com/embed/43954933"
           linkProceso="#"
           title="GROOUT"
-          description="Modelado 3D. Estilo steampunk."
+          description="GROOUT. Fue un proyecto generado en 2020 para la materia Animación de Personajes. 
+          El modelado fue hecho en 3dsMax y texturizado en Substance Painter. Se utilizó Mixamo para animar. Finalmente para el renderizado se usó V-Ray y Marmoset."
           haveProcess={false}
         />
       </div>

@@ -21,7 +21,8 @@
   .info {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 35%;
+    margin-left: 5%;
     @media screen and (max-width: 768px) {
       align-items: center;
       justify-content: center;
@@ -29,7 +30,6 @@
     }
     h2 {
       font-size: 5rem;
-      margin-left: -3%;
       text-transform: uppercase;
       z-index: 1;
       @media screen and (max-width: 915px) {
@@ -40,7 +40,6 @@
       }
     }
     p {
-      margin-left: 10%;
       @media screen and (max-width: 768px) {
         margin-left: 0;
       }
@@ -51,7 +50,7 @@
       border: 1px solid white;
       padding: 10px 15px;
       width: 30%;
-      margin-left: 10%;
+      margin-top: 10%;
       cursor: pointer;
       text-decoration: none;
       color: white;

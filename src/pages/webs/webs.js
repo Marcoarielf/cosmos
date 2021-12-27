@@ -14,18 +14,21 @@ function Webs() {
       link: "https://emprende-frontend.azurewebsites.net/",
       bg: "promu",
       extension: "jpg",
+      type: "web",
     },
     {
       nombre: "utopía",
       link: "https://utopia.fundacionbyb.org/",
       bg: "utopia",
       extension: "jpg",
+      type: "web",
     },
     {
       nombre: "ecommerce",
       link: "https://lettosecommerce.surge.sh/",
       bg: "lettos",
       extension: "jpg",
+      type: "web",
     },
     {
       nombre: "Natura Inspirar",
