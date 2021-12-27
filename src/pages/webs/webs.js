@@ -35,12 +35,14 @@ function Webs() {
       link: "https://drive.google.com/drive/u/0/folders/1kF07Cpgg4gRysOSAESkn5Kas5X-NRFqr",
       bg: "natura1",
       extension: "png",
+      type: "naturaI",
     },
     {
       nombre: "Natura Involucrar",
       link: "https://drive.google.com/drive/u/0/folders/13EsU54n-N2y518dkW46uAE9Qt_CSmGC1",
       bg: "natura2",
       extension: "png",
+      type: "naturaII",
     },
   ];
   return (

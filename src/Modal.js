@@ -50,7 +50,7 @@ export default function Modal({
     width: "100%",
     color: "#fff",
     height: "100%",
-    overflowY: "scroll",
+    overflowY: "auto",
     textAlign: "center",
   };
 

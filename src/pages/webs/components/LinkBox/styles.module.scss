@@ -11,6 +11,8 @@
     width: 25%;
     height: 50vh;
     margin: 3%;
+    cursor: pointer;
+    position: relative;
     a,
     button {
       margin: 0;
@@ -22,6 +24,9 @@
       outline: none;
       border: none;
       cursor: pointer;
+      position: absolute;
+      top: 45%;
+      left: 30%;
       &:hover {
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);

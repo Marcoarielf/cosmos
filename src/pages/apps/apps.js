@@ -10,21 +10,21 @@ function Apps() {
 
   const data = [
     {
-      nombre: "cuentasClaras",
+      nombre: "Cuentas Claras",
       type: "juego",
       link: "#",
       bg: "cc",
       extension: "jpg",
     },
     {
-      nombre: "absolut",
+      nombre: "Absolut",
       type: "web",
       link: "https://absolut-construct.netlify.app/",
       bg: "absolutt",
       extension: "jpg",
     },
     {
-      nombre: "sherlock",
+      nombre: "Sherlock",
       type: "web",
       link: "https://sherlock-holmes-construct.netlify.app/",
       bg: "sherlock",
@@ -38,7 +38,7 @@ function Apps() {
       extension: "jpg",
     },
     {
-      nombre: "HealthyDog",
+      nombre: "Healthy Dog",
       type: "juego",
       link: "#",
       bg: "healthy",
