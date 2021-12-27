@@ -41,11 +41,10 @@ function Modelados() {
         />
         <ModelDetail
           url="https://www.artstation.com/embed/37098111"
-          linkProceso="#"
+          linkProceso="https://www.youtube.com/embed/5SHvmN_S9OU"
           title="war machine"
           description="WAR MACHINE fue un proyecto generado en 2020 con fines académicos. 
           El modelado fue generado a partir de 3D Max en low poly con una cantidad de 89.961 vértices y se utilizó RizomUV y Substance Painter para el texturizado y render. Finalmente para el renderizado se usó V-Ray y Marmoset."
-          haveProcess={false}
         />
         <ModelDetail
           url="https://www.artstation.com/embed/43954933"

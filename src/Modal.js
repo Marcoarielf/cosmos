@@ -51,6 +51,7 @@ export default function Modal({
     color: "#fff",
     height: "100%",
     overflowY: "scroll",
+    textAlign: "center",
   };
 
   return ReactDom.createPortal(

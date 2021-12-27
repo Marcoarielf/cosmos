@@ -14,7 +14,7 @@ function Apps() {
       type: "juego",
       link: "#",
       bg: "cc",
-      extension: "png",
+      extension: "jpg",
     },
     {
       nombre: "absolut",
@@ -27,7 +27,7 @@ function Apps() {
       nombre: "sherlock",
       type: "web",
       link: "https://sherlock-holmes-construct.netlify.app/",
-      bg: "lettos",
+      bg: "sherlock",
       extension: "jpg",
     },
     {
@@ -41,8 +41,8 @@ function Apps() {
       nombre: "HealthyDog",
       type: "juego",
       link: "#",
-      bg: "lettos",
-      extension: "jpg",
+      bg: "healthy",
+      extension: "png",
     },
   ];
   return (

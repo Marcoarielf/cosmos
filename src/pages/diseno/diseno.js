@@ -1,12 +1,11 @@
 import React from "react";
 import Header from "../../share/components/header/header";
 import Article from "../../share/components/article/article";
-import LogoGiordano from "./../../images/giordano.png";
-import LogoFrosi from "./../../images/frosi2.png";
-import LogoJoystuk from "./../../images/joystuk.png";
-import Nutriarte from "./../../images/nutriarte.png";
+import LogoGiordano from "./../../images/giordano.jpg";
+import LogoFrosi from "./../../images/frosi2.jpg";
+import LogoJoystuk from "./../../images/joystuk.jpg";
+import Nutriarte from "./../../images/nutriarte.jpg";
 import css from "./styles.module.scss";
-import { Link } from "react-router-dom";
 
 function Diseno() {
   const titleHeader = "DISEÑO GRÁFICO";

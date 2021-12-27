@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  cursor: none;
   .logo {
     max-width: 30%;
     position: relative;
@@ -15,6 +16,7 @@
   }
 }
 .containerNav {
+  cursor: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,26 +69,6 @@
         text-align: center;
       }
     }
-  }
-}
-.experiencia {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .containerText {
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    border: 1px solid #fafafa;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
   }
 }
 

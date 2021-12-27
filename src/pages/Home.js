@@ -113,11 +113,6 @@ function Home() {
           </Link>
         </ul>
       </div>
-      <div className={css.experiencia}>
-        <div className={css.containerText}>
-          <h2>viví la experiencia de un viaje perfecto</h2>
-        </div>
-      </div>
     </>
   );
 }

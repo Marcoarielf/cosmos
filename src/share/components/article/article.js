@@ -102,13 +102,14 @@ function Article({
         onClose={() => setIsOpenModal1(false)}
       >
         <h2>NUTRIARTE - proyecto</h2>
-        <p>Logo inicial:</p>
+        <p style={{ paddingLeft: 50, paddingRight: 50 }}>Logo inicial:</p>
         <img
           width="50%"
+          style={{ marginRight: 20, marginBottom: 50 }}
           src="/nutriarte/Nutriarte-Logo-viejo.jpg"
           alt="nutriarte logo"
         />
-        <p>
+        <p style={{ paddingLeft: 50, paddingRight: 50 }}>
           Para el rebranding se decidió simplificar la marca eliminando toda la
           carga visual que tenía anteriormente y conservando el tenedor en
           reemplazo de la "i" para mantener su escencia. Otro elemento que se
@@ -118,21 +119,21 @@ function Article({
         </p>
         <img
           width="50%"
-          style={{ marginRight: 20, marginBottom: 20 }}
+          style={{ marginRight: 20, marginBottom: 50 }}
           src="/nutriarte/Rebranding-Nutriarte-normal.jpg"
           alt="nutriarte logo"
         />
-        <p>
+        <p style={{ paddingLeft: 50, paddingRight: 50 }}>
           También se crearon opciones alternativas para sus distintas
           aplicaciones.
         </p>
         <img
           width="50%"
-          style={{ marginRight: 20, marginBottom: 20 }}
+          style={{ marginRight: 20, marginBottom: 50 }}
           src="/nutriarte/Rebranding-Nutriarte-normal-2.jpg"
           alt="nutriarte"
         />
-        <p>
+        <p style={{ paddingLeft: 50, paddingRight: 50 }}>
           Por otro lado la paleta de color se modificó y redujo a 3 colores
           principales, siendo estos de tonos más amigables en su aplicación en
           redes sociales. Adicional al rebranding del logo, se crearon dos
@@ -141,21 +142,40 @@ function Article({
         </p>
         <img
           width="50%"
-          style={{ marginRight: 20, marginBottom: 20 }}
+          style={{ marginRight: 20, marginBottom: 50 }}
           src="/nutriarte/Rebranding-Nutriarte-recetas.jpg"
           alt=""
         />
         <img
           width="50%"
-          style={{ marginRight: 20, marginBottom: 20 }}
+          style={{ marginRight: 20, marginBottom: 50 }}
           src="/nutriarte/Rebranding-Nutriarte-salud.jpg"
           alt=""
         />
-        <p>
+        <p style={{ paddingLeft: 50, paddingRight: 50 }}>
           Actualmente el emprendimiento cuenta con 340mil seguidores en
           Instagram transformándose en una de las cuentas más populares en el
           rubro de nutrición.
         </p>
+        <h2 style={{ marginTop: 50 }}>Aplicaciones</h2>
+        <img
+          width="50%"
+          style={{ marginRight: 20, marginBottom: 50 }}
+          src="/nutriarte/nut1.png"
+          alt="Nutriarte aplicación"
+        />
+        <img
+          width="50%"
+          style={{ marginRight: 20, marginBottom: 50 }}
+          src="/nutriarte/nut2.png"
+          alt="Nutriarte aplicación"
+        />
+        <img
+          width="50%"
+          style={{ marginRight: 20, marginBottom: 50 }}
+          src="/nutriarte/nut3.png"
+          alt="Nutriarte aplicación"
+        />
       </Modal>
       <div
         className={`${css.containerArticle} containerArticle ${
